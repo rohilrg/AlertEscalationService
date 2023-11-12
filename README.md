@@ -6,15 +6,12 @@ The challenge is described here: https://github.com/aircall/technical-test-pager
 
 ## Project Structure
 ````bash
-./AlertEscalationSystem/
+./AlertEscalationService/
 ├── src
 │   ├── logs
 │   │   ├── info_Service 1.log
 │   │   ├── info_Service 2.log
-│   │   ├── info_Service 3.log
-│   │   ├── info_Service 4.log
-│   │   ├── info_Service 5.log
-│   │   └── info_Service 6.log
+│   │   └── info_Service 3.log
 │   ├── storage
 │   │   ├── ep.json
 │   │   └── number_of_services.json
@@ -30,7 +27,7 @@ The challenge is described here: https://github.com/aircall/technical-test-pager
 ├── run.py
 └── tmp.txt
 
-4 directories, 18 files
+4 directories, 15 files
 ````
 ## Description of Files
 
