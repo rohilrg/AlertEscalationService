@@ -1,0 +1,5 @@
+2023-11-12 15:24:53,918 - Service 1 - INFO - UNHEALTHY state detected for Service 1
+2023-11-12 15:24:53,919 - Service 1 - INFO - Escalating alert for Service 1 to level 1: 04 38 17 33 98
+2023-11-12 15:25:08,935 - Service 1 - INFO - No acknowledgment received for Service 1 within 15 minutes
+2023-11-12 15:25:08,935 - Service 1 - INFO - Escalating alert for Service 1 to level 2: pennydavis55@example.com
+2023-11-12 15:25:14,497 - Service 1 - INFO - Acknowledgment received for Service 1

@@ -1,0 +1,17 @@
+2023-11-12 15:24:55,477 - Service 2 - INFO - UNHEALTHY state detected for Service 2
+2023-11-12 15:24:55,478 - Service 2 - INFO - Escalating alert for Service 2 to level 1: bobmartinez77@mail.com
+2023-11-12 15:25:10,147 - Service 2 - INFO - Already received UNHEALTHY state before for Service 2!! Doing nothing.
+2023-11-12 15:25:10,493 - Service 2 - INFO - No acknowledgment received for Service 2 within 15 minutes
+2023-11-12 15:25:10,494 - Service 2 - INFO - Escalating alert for Service 2 to level 2: 05 31 54 33 66
+2023-11-12 15:25:10,937 - Service 2 - INFO - Acknowledgment received for Service 2
+2023-11-12 15:25:43,724 - Service 2 - INFO - Received HEALTHY state for Service 2, stopping alert state for the service.
+2023-11-12 15:25:43,724 - Service 2 - INFO - -------------------------------------------------------------------
+2023-11-12 15:26:01,707 - Service 2 - INFO - UNHEALTHY state detected for Service 2
+2023-11-12 15:26:01,707 - Service 2 - INFO - Escalating alert for Service 2 to level 1: bobmartinez77@mail.com
+2023-11-12 15:26:05,808 - Service 2 - INFO - Already received UNHEALTHY state before for Service 2!! Doing nothing.
+2023-11-12 15:26:10,181 - Service 2 - INFO - Already received UNHEALTHY state before for Service 2!! Doing nothing.
+2023-11-12 15:26:16,723 - Service 2 - INFO - No acknowledgment received for Service 2 within 15 minutes
+2023-11-12 15:26:16,723 - Service 2 - INFO - Escalating alert for Service 2 to level 2: 05 31 54 33 66
+2023-11-12 15:26:48,755 - Service 2 - INFO - Acknowledgment received for Service 2
+2023-11-12 15:27:05,417 - Service 2 - INFO - Received HEALTHY state for Service 2, stopping alert state for the service.
+2023-11-12 15:27:05,417 - Service 2 - INFO - -------------------------------------------------------------------

@@ -1,0 +1,7 @@
+2023-11-12 15:29:55,248 - Service 3 - INFO - UNHEALTHY state detected for Service 3
+2023-11-12 15:29:55,249 - Service 3 - INFO - Escalating alert for Service 3 to level 1: dianajones25@example.com
+2023-11-12 15:30:10,265 - Service 3 - INFO - No acknowledgment received for Service 3 within 15 minutes
+2023-11-12 15:30:10,265 - Service 3 - INFO - No further escalation levels for Service 3
+2023-11-12 15:30:33,287 - Service 3 - INFO - Acknowledgment received for See 3
+2023-11-12 15:41:52,110 - Service 3 - INFO - Received HEALTHY state for Service 3, stopping alert state for the service.
+2023-11-12 15:41:52,110 - Service 3 - INFO - -------------------------------------------------------------------
