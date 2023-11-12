@@ -1,4 +1,4 @@
-# AlertEscalationSystem
+# AlertEscalationService
 
 ## Overview
 This project is designed to simulate real-life work scenarios for incident alerts and on-call shifts.
