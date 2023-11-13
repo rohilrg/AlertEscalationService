@@ -54,10 +54,11 @@ In your terminal/command-line go to the project folder and execute the command b
 pip install -r requirements.txt
 ```
 ## Checking before building
-Please run these make commands to make sure the formatting, linting are working.
+Please run these make commands to make sure the formatting, linting and tests are working.
 ````commandline
 make format
 make lint
+make test
 ````
 
 ## Running 
