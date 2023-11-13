@@ -1,0 +1,8 @@
+2023-11-13 10:04:51,577 - Service 4 - INFO - UNHEALTHY state detected for Service 4
+2023-11-13 10:04:51,578 - Service 4 - INFO - Escalating alert for Service 4 to level 1: 04 90 93 67 71
+2023-11-13 10:05:06,593 - Service 4 - INFO - No acknowledgment received for Service 4 within 15 minutes
+2023-11-13 10:05:06,593 - Service 4 - INFO - Escalating alert for Service 4 to level 2: mikemartin86@gmail.net
+2023-11-13 10:05:21,608 - Service 4 - INFO - Acknowledgment received for Service 4
+2023-11-13 10:07:41,733 - Service 4 - INFO - Received HEALTHY state for Service 4, waiting for acknowledgment timer to timeout.
+2023-11-13 10:07:56,748 - Service 4 - INFO - Received HEALTHY state for Service 4, stopping alert state for the service.
+2023-11-13 10:07:56,749 - Service 4 - INFO - -------------------------------------------------------------------

@@ -1,0 +1,23 @@
+2023-11-13 10:04:26,091 - Service 6 - INFO - UNHEALTHY state detected for Service 6
+2023-11-13 10:04:26,092 - Service 6 - INFO - Escalating alert for Service 6 to level 1: 02 16 97 90 93
+2023-11-13 10:04:41,107 - Service 6 - INFO - No acknowledgment received for Service 6 within 15 minutes
+2023-11-13 10:04:41,108 - Service 6 - INFO - Escalating alert for Service 6 to level 2: 05 77 03 49 19
+2023-11-13 10:04:42,108 - Service 6 - INFO - Acknowledgment received for Service 6
+2023-11-13 10:07:22,791 - Service 6 - INFO - Received HEALTHY state for Service 6, waiting for acknowledgment timer to timeout.
+2023-11-13 10:07:37,807 - Service 6 - INFO - Received HEALTHY state for Service 6, stopping alert state for the service.
+2023-11-13 10:07:37,807 - Service 6 - INFO - -------------------------------------------------------------------
+2023-11-13 10:08:23,689 - Service 6 - INFO - UNHEALTHY state detected for Service 6
+2023-11-13 10:08:23,689 - Service 6 - INFO - Escalating alert for Service 6 to level 1: 02 16 97 90 93
+2023-11-13 10:08:38,705 - Service 6 - INFO - No acknowledgment received for Service 6 within 15 minutes
+2023-11-13 10:08:38,705 - Service 6 - INFO - Escalating alert for Service 6 to level 2: 05 77 03 49 19
+2023-11-13 10:08:53,721 - Service 6 - INFO - No acknowledgment received for Service 6 within 15 minutes
+2023-11-13 10:08:53,722 - Service 6 - INFO - Escalating alert for Service 6 to level 3: ryananderson25@gmail.net
+2023-11-13 10:09:08,737 - Service 6 - INFO - No acknowledgment received for Service 6 within 15 minutes
+2023-11-13 10:09:08,738 - Service 6 - INFO - Escalating alert for Service 6 to level 4: hannahgarcia15@gmail.io
+2023-11-13 10:09:23,753 - Service 6 - INFO - No acknowledgment received for Service 6 within 15 minutes
+2023-11-13 10:09:23,754 - Service 6 - INFO - Escalating alert for Service 6 to level 5: 05 33 30 84 98
+2023-11-13 10:09:25,965 - Service 6 - INFO - Already received UNHEALTHY state before for Service 6!! Doing nothing.
+2023-11-13 10:09:31,717 - Service 6 - INFO - Acknowledgment received for Service 6
+2023-11-13 10:09:54,494 - Service 6 - INFO - Received HEALTHY state for Service 6, waiting for acknowledgment timer to timeout.
+2023-11-13 10:10:09,510 - Service 6 - INFO - Received HEALTHY state for Service 6, stopping alert state for the service.
+2023-11-13 10:10:09,510 - Service 6 - INFO - -------------------------------------------------------------------

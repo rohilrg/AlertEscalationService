@@ -3,6 +3,7 @@ import json
 import sys
 import random
 import time
+import asyncio
 import threading
 from src.utils import (
     generate_emails,
@@ -93,24 +94,27 @@ class PagerService:
         Args:
             service_name (str): The name of the service to send alerts for.
         """
-        current_level = self.current_escalation_level.get(service_name, str(1))
-        contact_info = self.ep_json[service_name][current_level]
-        info_logger = setup_logger(
-            service_name, self.log_folder, f"info_{service_name}.log"
-        )
-        info_logger.info(
-            f"Escalating alert for {service_name} to level {current_level}: {contact_info}"
-        )
-
-        # Wait for 15 minutes for acknowledgment
-        time.sleep(15)  # 900 seconds = 15 minutes
-
-        # Check for acknowledgment after 15 minutes
-        if service_name not in self.alert_acknowledgment:
-            info_logger.info(
-                f"No acknowledgment received for {service_name} within 15 minutes"
+        escalate = True
+        while escalate:
+            current_level = self.current_escalation_level.get(service_name, str(1))
+            contact_info = self.ep_json[service_name][current_level]
+            info_logger = setup_logger(
+                service_name, self.log_folder, f"info_{service_name}.log"
             )
-            self._escalate_alert(service_name)
+            info_logger.info(
+                f"Escalating alert for {service_name} to level {current_level}: {contact_info}"
+            )
+            # Wait for 15 minutes for acknowledgment
+            time.sleep(15)  # 900 seconds = 15 minutes
+            # Check for acknowledgment after 15 minutes
+            if service_name not in self.alert_acknowledgment:
+                info_logger.info(
+                    f"No acknowledgment received for {service_name} within 15 minutes"
+                )
+                escalate = self._escalate_alert(service_name)
+
+            else:
+                escalate = False
 
     def _escalate_alert(self, service_name):
         """
@@ -121,23 +125,17 @@ class PagerService:
         """
         current_level = self.current_escalation_level.get(service_name, str(1))
         next_level = int(current_level) + 1
-
         # Escalate alert to the next level if possible
         if str(next_level) in self.ep_json[service_name]:
             self.current_escalation_level[service_name] = str(next_level)
-            contact_info = self.ep_json[service_name][str(next_level)]
-            info_logger = setup_logger(
-                service_name, self.log_folder, f"info_{service_name}.log"
-            )
-            info_logger.info(
-                f"Escalating alert for {service_name} to level {next_level}: {contact_info}"
-            )
+            return True
         else:
             # No further escalation level available
             info_logger = setup_logger(
                 service_name, self.log_folder, f"info_{service_name}.log"
             )
             info_logger.info(f"No further escalation levels for {service_name}")
+            return False
 
     def _acknowledgment_listener(self, service_name):
         """
@@ -148,7 +146,7 @@ class PagerService:
         """
         while True:
             # Randomly wait for a time less than 30 mins
-            time.sleep(random.randint(10, 60))  # Random time up to 30 mins
+            time.sleep(random.randint(10, 90))  # Random time up to 30 mins
 
             # Process acknowledgment for a randomly selected service
             if self.alert_received:
@@ -187,10 +185,10 @@ class PagerService:
                 info_logger.info(f"UNHEALTHY state detected for {service_name}")
 
                 # Start threads for sending alerts and listening for acknowledgments
-                threading.Thread(target=self._send_alerts, args=(service_name,)).start()
                 threading.Thread(
                     target=self._acknowledgment_listener, args=(service_name,)
                 ).start()
+                threading.Thread(target=self._send_alerts, args=(service_name,)).start()
             else:
                 # Log if UNHEALTHY state is already processed
                 info_logger = setup_logger(
@@ -205,6 +203,10 @@ class PagerService:
                 info_logger = setup_logger(
                     service_name, self.log_folder, f"info_{service_name}.log"
                 )
+                info_logger.info(
+                    f"Received HEALTHY state for {service_name}, waiting for acknowledgment timer to timeout."
+                )
+                time.sleep(15)
                 info_logger.info(
                     f"Received HEALTHY state for {service_name}, stopping alert state for the service."
                 )

@@ -1,5 +1,9 @@
-2023-11-12 15:24:53,918 - Service 1 - INFO - UNHEALTHY state detected for Service 1
-2023-11-12 15:24:53,919 - Service 1 - INFO - Escalating alert for Service 1 to level 1: 04 38 17 33 98
-2023-11-12 15:25:08,935 - Service 1 - INFO - No acknowledgment received for Service 1 within 15 minutes
-2023-11-12 15:25:08,935 - Service 1 - INFO - Escalating alert for Service 1 to level 2: pennydavis55@example.com
-2023-11-12 15:25:14,497 - Service 1 - INFO - Acknowledgment received for Service 1
+2023-11-13 10:05:19,640 - Service 1 - INFO - UNHEALTHY state detected for Service 1
+2023-11-13 10:05:19,641 - Service 1 - INFO - Escalating alert for Service 1 to level 1: 04 38 17 33 98
+2023-11-13 10:05:21,298 - Service 1 - INFO - Already received UNHEALTHY state before for Service 1!! Doing nothing.
+2023-11-13 10:05:34,657 - Service 1 - INFO - No acknowledgment received for Service 1 within 15 minutes
+2023-11-13 10:05:34,657 - Service 1 - INFO - Escalating alert for Service 1 to level 2: pennydavis55@example.com
+2023-11-13 10:05:47,633 - Service 1 - INFO - Acknowledgment received for Service 1
+2023-11-13 10:06:20,348 - Service 1 - INFO - Received HEALTHY state for Service 1, waiting for acknowledgment timer to timeout.
+2023-11-13 10:06:35,363 - Service 1 - INFO - Received HEALTHY state for Service 1, stopping alert state for the service.
+2023-11-13 10:06:35,364 - Service 1 - INFO - -------------------------------------------------------------------

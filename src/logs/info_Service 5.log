@@ -1,0 +1,8 @@
+2023-11-13 10:04:50,488 - Service 5 - INFO - UNHEALTHY state detected for Service 5
+2023-11-13 10:04:50,489 - Service 5 - INFO - Escalating alert for Service 5 to level 1: tomgonzalez22@mail.io
+2023-11-13 10:05:05,504 - Service 5 - INFO - No acknowledgment received for Service 5 within 15 minutes
+2023-11-13 10:05:05,505 - Service 5 - INFO - No further escalation levels for Service 5
+2023-11-13 10:06:18,577 - Service 5 - INFO - Acknowledgment received for Service 5
+2023-11-13 10:07:56,749 - Service 5 - INFO - Received HEALTHY state for Service 5, waiting for acknowledgment timer to timeout.
+2023-11-13 10:08:11,764 - Service 5 - INFO - Received HEALTHY state for Service 5, stopping alert state for the service.
+2023-11-13 10:08:11,764 - Service 5 - INFO - -------------------------------------------------------------------
